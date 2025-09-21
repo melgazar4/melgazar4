@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Elgazar — Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Mohamed Elgazar — Cybersecurity student. Pentesting, network scanning, CTF writeups and automation." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial; background:linear-gradient(180deg,#071026 0%, #07172b 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:32px auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .hero{display:flex;gap:20px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#042029}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+
+    main{margin-top:26px;display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .projects .project{padding:12px;border-radius:10px;background:transparent;border:1px dashed rgba(255,255,255,0.03);margin-bottom:12px}
+    .project h3{margin:0 0 6px}
+    .meta{color:var(--muted);font-size:13px}
+
+    aside .section-title{font-weight:700;margin-bottom:8px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    nav.toplinks{display:flex;gap:8px;flex-wrap:wrap}
+    a.link{color:var(--accent);text-decoration:none}
+
+    /* responsive */
+    @media (max-width:880px){main{grid-template-columns:1fr}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div class="avatar">ME</div>
+        <div>
+          <h1>Mohamed Elgazar — Cybersecurity Portfolio</h1>
+          <p class="lead">Computer Engineering student · Cybersecurity · Machine Learning · Systems Programming</p>
+          <div class="badges">
+            <div class="badge">Kali Linux</div>
+            <div class="badge">Python</div>
+            <div class="badge">Nmap</div>
+            <div class="badge">Wireshark</div>
+            <div class="badge">Metasploit</div>
+            <div class="badge">Burp Suite</div>
+            <div class="badge">OWASP ZAP</div>
+            <div class="badge">sqlmap</div>
+            <div class="badge">Nikto</div>
+            <div class="badge">Dirb</div>
+            <div class="badge">Masscan</div>
+          </div>
+        </div>
+      </div>
+      <nav class="toplinks">
+        <a class="link" href="https://www.linkedin.com/in/mohamed-elgazar4/" target="_blank">LinkedIn</a>
+        <a class="link" href="https://github.com/melgazar4" target="_blank">GitHub</a>
+        <a class="link" href="mailto:melgazar4@example.com">Email</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card projects">
+        <h2 style="margin-top:0">Projects</h2>
+
+        <div class="project">
+          <h3>URL Shortener with Security Check</h3>
+          <div class="meta">Python · Flask/Django · Link validation</div>
+          <p>A URL shortening service that performs automated security checks on destination links before issuing shortened URLs. It validates redirects and checks destinations against threat feeds before generating a short code.</p>
+          <a class="link" href="https://github.com/melgazar4/URL-Shortener" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <h3>Email Spam & Phishing Detector (Graduation Project)</h3>
+          <div class="meta">Python · NLP · scikit-learn / TensorFlow</div>
+          <p>A machine-learning system that detects spam and phishing emails using preprocessing, feature extraction (TF-IDF / embeddings), and classification models. Evaluated with precision & recall.</p>
+          <a class="link" href="https://github.com/melgazar4/Email-Spam-Phishing-Detector" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <h3>C++ Word Processing Program</h3>
+          <div class="meta">C++ · Console app · File I/O</div>
+          <p>A lightweight console word processor written in C++ supporting text editing, file open/save, and basic formatting. Focused on efficient file handling and user input.</p>
+          <a class="link" href="https://github.com/melgazar4/CPP-Word-Processor" target="_blank">View on GitHub</a>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card" style="margin-bottom:12px">
+          <div class="section-title">About Me</div>
+          <div class="meta">I am a Computer Engineering student focused on cybersecurity and practical tools. I build web security tools, machine learning models for threat detection, and system-level programs. I enjoy turning security ideas into working projects and documenting my process with clear writeups and reports.</div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <div class="skill">Kali Linux</div>
+            <div class="skill">Nmap</div>
+            <div class="skill">Burp Suite</div>
+            <div class="skill">Wireshark</div>
+            <div class="skill">Python</div>
+            <div class="skill">Bash</div>
+            <div class="skill">C++</div>
+            <div class="skill">Metasploit</div>
+            <div class="skill">sqlmap</div>
+            <div class="skill">OWASP ZAP</div>
+            <div class="skill">Nikto</div>
+            <div class="skill">Dirb</div>
+            <div class="skill">Masscan</div>
+            <div class="skill">Netcat</div>
+            <div class="skill">Tcpdump</div>
+            <div class="skill">Aircrack-ng</div>
+            <div class="skill">OpenVAS</div>
+            <div class="skill">Postman</div>
+            <div class="skill">Fiddler</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title">Network & Web Tools (selected)</div>
+          <div class="meta">
+            <strong>Network:</strong> Nmap, Masscan, Netcat, Tcpdump, Wireshark, Aircrack-ng, OpenVAS<br/>
+            <strong>Web / Application:</strong> Burp Suite, OWASP ZAP, sqlmap, Nikto, Dirb, Postman, Fiddler
+          </div>
+          <div style="margin-top:8px"><a class="link" href="https://github.com/melgazar4" target="_blank">My GitHub</a></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title">Contact</div>
+          <div class="meta">Email: &&&REPLACE_EMAIL&&&</div>
+          <div class="meta">LinkedIn: <a class="link" href="https://www.linkedin.com/in/mohamed-elgazar4/" target="_blank">mohamed-elgazar4</a></div>
+          <div style="margin-top:8px"><a class="link" href="https://github.com/melgazar4" target="_blank">My GitHub</a></div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Built with ❤️ — Edit this file to add your real project links and reports. Last updated: 2025-09-21
+    </footer>
+  </div>
+</body>
+</html>
